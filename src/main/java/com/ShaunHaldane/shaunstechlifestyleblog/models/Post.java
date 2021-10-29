@@ -1,6 +1,5 @@
 package com.ShaunHaldane.shaunstechlifestyleblog.models;
 
-import java.sql.Blob;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -14,7 +13,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import javax.validation.constraints.NotBlank;
 
 @Entity
 @Table(name="post")
@@ -28,7 +26,7 @@ public class Post {
 	
 	private String title;
 
-	@Column(updatable = true, name="content", nullable = false, columnDefinition = "varchar(max)")
+//	@Column(name = "content", length = 65535)
 	private String content;
 	
 	private LocalDate datePosted = java.time.LocalDate.now();
