@@ -26,7 +26,7 @@ public class Post {
 	
 	private String title;
 
-//	@Column(name = "content", length = 65535)
+	@Column(name = "content", length = 65535)
 	private String content;
 	
 	private LocalDate datePosted = java.time.LocalDate.now();
