@@ -17,6 +17,9 @@
 			<div class="navbar-brand">
 				<h3>Shauns Tech-Life</h3>
 			</div>
+			<div class="nav-item" style="padding:10px">
+				<a th:href="@{/about}" class="btn btn-primary">About</a>
+			</div>
 			<div class="nav-item ml-auto" style="padding:10px">
 				<a sec:authorize="hasRole('ADMIN')" th:href="@{/addPost}" class="btn btn-primary">Add a new post</a>
 			</div>
