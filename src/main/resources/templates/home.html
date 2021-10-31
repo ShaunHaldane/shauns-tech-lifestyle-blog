@@ -13,8 +13,9 @@
 <body>
 
 		<nav class="navbar navbar-expand navbar-dark bg-dark">
+		
 			<div class="navbar-brand">
-				<h3>Shaun's Tech-Life Blog</h3>
+				<h3>Shauns Tech-Life</h3>
 			</div>
 			<div class="nav-item ml-auto" style="padding:10px">
 				<a sec:authorize="hasRole('ADMIN')" th:href="@{/addPost}" class="btn btn-primary">Add a new post</a>
@@ -29,13 +30,14 @@
 		
 	<div class="container">
 	
-		<h1 style="margin-top:150px">Hi, I'm Shaun 
-		<img class="float-right" th:src="@{/images/me.png}" style="width:250px;height:250px; border-radius:125px">
+		<h1 style="margin-top:150px">Making Tech to Improve Lives 
+		<img class="float-right" th:src="@{/images/AssistiveTechLifeLogo.png}" style="width:250px;height:250px; border-radius:125px">
+		<i class="float-right">-"let tech improve our lives"</i>
 		</h1>
 		
 		
-		<h4 style="margin-top:20px">I'm a software engineer who loves building projects to make life more efficient.
-									This website is a digital space for me to share my knowledge and experience in the world of tech.</h4> 
+		<h4 style="margin-top:20px">This website is a digital space for makers to upload details of products which they have made to improve the lives
+		of themselves and others.</h4> 
 
 
 		<h2 style="margin-top:100px"><u>Articles</u></h2>
